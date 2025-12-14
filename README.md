@@ -38,21 +38,6 @@ Install all required packages by running:
 ```bash
 pip install -r requirements.txt
 ```
-### Federated Dataset Preprocessing
-
-This preprocessing module partitions the entire dataset into a specified number of clients according to federated learning settings.  
-To simulate realistic heterogeneous environments, datasets are split into **non-IID local datasets** with **label distribution skew**, which is controlled by a Dirichlet distribution.
-
-Specifically, each client is assigned a subset of samples drawn from a Dirichlet distribution over class labels, resulting in statistically heterogeneous local data distributions across clients. Smaller values of the Dirichlet concentration parameter correspond to higher degrees of data heterogeneity, which better reflect real-world federated learning scenarios.
-
-The preprocessing pipeline supports:
-- IID and non-IID data partitioning
-- Dirichlet-based label skew with configurable concentration parameter
-- Flexible number of clients and samples per client
-- Consistent data splits for reproducible experiments
-
----
-
 ## Running Federated Learning with ECGR
 
 ### Test Run
