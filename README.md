@@ -37,7 +37,7 @@ Install all required packages by running:
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### Federated Dataset Preprocessing
 
 This preprocessing module partitions the entire dataset into a specified number of clients according to federated learning settings.  
