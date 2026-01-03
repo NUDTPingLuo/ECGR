@@ -54,6 +54,6 @@ python fl_main.py --config "./config/test_config.yaml"
 You can place the results in the `results/test` directory, and then run the following command:
 
 ```bash
-python postprocessing/eval_main.py -rr 'results/test'
+python postprocessing/eval_main.py -rr ../results/test
 
 
